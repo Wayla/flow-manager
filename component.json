@@ -1,0 +1,17 @@
+{
+  "name": "flow-manager",
+  "repo": "Wayla/flow-manager",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [],
+  "templates": [],
+  "remotes": []
+}
