@@ -19,7 +19,7 @@ module.exports = (function() { //singleton
       route : '/redirect-to-twitter-auth',
       waitFor : CurrentUser.loaded,
       skipWhen : function () {
-        return CurrentUser.get('isLoggedIn')
+        return CurrentUser.get('isLoggedIn') //we hit this when the user is redirected back from twitter auth
       },
       exitFlowWhen : function (flowState) {
         return !CurrentUser.get('isLoggedIn') && flowState && flowState.method === 'resume' //i.e. when user cancels twitter login on Add To Homescreen. We never recieve an OAuth fail event on add to homescreen (the fail only shows up in the popup safari window), so we need some way of knowing that the user canceled
